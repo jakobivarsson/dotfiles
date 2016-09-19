@@ -1,9 +1,10 @@
 call plug#begin()
 
-Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe', { 'do': './insall.py --clang-completer --gocode-completer' }
+Plug 'VundleVim/Vundle.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'crusoexia/vim-monokai'
